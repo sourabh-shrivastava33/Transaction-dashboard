@@ -16,7 +16,10 @@ const Table = ({ month, setMonth, search, setSearch, page, setPage }) => {
               type="text"
               placeholder="Search transaction"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                setPage(1);
+              }}
               className="w-full h-10 rounded-md p-2 text-lg text-gray-50 placeholder:text-gray-50 bg-sky-950"
             />
           </div>

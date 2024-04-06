@@ -26,7 +26,7 @@ This project implements a MERN stack application to manage product transaction d
    - Node.js (version 14+) and npm
 2. **Clone Repository:**
    ```bash
-   git clone [https://your-github-username/mern-transaction-challenge.git](https://github.com/sourabh-shrivastava33/Transaction-dashboard.git)
+   git clone https://your-github-username/mern-transaction-challenge.git
    ```
 3. **Install Dependencies:**
 

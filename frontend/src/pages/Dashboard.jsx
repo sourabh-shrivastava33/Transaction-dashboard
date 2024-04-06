@@ -15,7 +15,7 @@ const Dashboard = () => {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
-  let limit = 10;
+  let limit = 5;
   const { data, isLoading } = useGetAllTransactionQuery({
     search,
     month,

@@ -23,7 +23,9 @@ export const getAllTransaction = async (req, res) => {
   const allTransaction = await ProductModel.find(queryParams)
     .skip(skip)
     .limit(limit);
-  const totalPage = Math.ceil(totalProducts / limit);
+  const totalPage = search
+    ? Math.ceil(allTransaction.length / limit)
+    : Math.ceil(totalProducts / limit);
 
   res
     .status(StatusCodes.OK)
